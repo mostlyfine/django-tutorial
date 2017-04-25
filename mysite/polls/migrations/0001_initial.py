@@ -15,10 +15,10 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Choise',
+            name='Choice',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('choise_text', models.CharField(max_length=200)),
+                ('choice_text', models.CharField(max_length=200)),
                 ('votes', models.IntegerField(default=0)),
             ],
         ),
@@ -31,7 +31,7 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.AddField(
-            model_name='choise',
+            model_name='choice',
             name='question',
             field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='polls.Question'),
         ),
