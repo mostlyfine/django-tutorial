@@ -1,0 +1,29 @@
+サーバ起動
+```
+cd mysite
+python manage.py runserver
+```
+
+アプリケーションの追加とデータベースを更新
+```
+cd mysite
+python manage.py migrate
+```
+
+マイグレーションを作成する
+```
+cd mysite
+python manage.py makemigrations
+```
+
+マイグレーションの内容を表示
+```
+cd mysite
+python manage.py sqlmigrate polls 0001
+```
+
+対話シェル起動
+```
+cd mysite
+python manage.py shell
+```
